@@ -18,4 +18,4 @@ Work Flow:
   
 3.The server runs the FPGrowth algorithm to determine dependencies for each event;
 
-4.The server decodes the output number of the algorithm and sends it in human readable format to the client.
+4.The server decodes the output numbers of the algorithm and sends it in human readable format to the client.
