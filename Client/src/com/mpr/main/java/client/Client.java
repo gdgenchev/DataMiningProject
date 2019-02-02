@@ -31,14 +31,12 @@ public class Client {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter value [0.0-1.0]");
         while (true) {
-            String input = scanner.nextLine();
             try {
-                double minSupp = Double.parseDouble(input);
+                double minSupp = Double.parseDouble(scanner.nextLine());
                 if (minSupp >= 0.0 && minSupp <= 1.0) {
                     return minSupp;
-                } else {
-                    System.out.println("Wrong input! Number not between 0-1");
-                
+                }
+                System.out.println("Wrong input! Number not between 0-1");
             } catch (NumberFormatException e) {
                 System.out.println("Wrong input! Please enter floating value 0-1");
             }
