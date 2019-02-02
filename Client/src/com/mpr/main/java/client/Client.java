@@ -36,8 +36,9 @@ public class Client {
                 double minSupp = Double.parseDouble(input);
                 if (minSupp >= 0.0 && minSupp <= 1.0) {
                     return minSupp;
-                }
-                throw new NumberFormatException();
+                } else {
+                    System.out.println("Wrong input! Number not between 0-1");
+                
             } catch (NumberFormatException e) {
                 System.out.println("Wrong input! Please enter floating value 0-1");
             }
